@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Girassol&display=swap');
 
+:root {
+  --fontsize: 60px;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -15,22 +19,24 @@ header{
 }
 
 .container {
-  position: absolute;
-  width: 20vw;
-  left: 40vw;
-  margin-top: 10vh;
+  position: center;
+  width: 310px;
+  margin: auto;
+  margin-top: 5vh;
   border: 1px solid rgb(170, 167, 167);
 }
 
 .screen {
   border: 1px solid rgb(170, 167, 167);
-  padding:5vh 0.6vw;
   position: relative;
+  padding-right:  1rem;
   background-color: rgba(230, 222, 222, 0.445);
-  font-size: 20px;
-  text-align: end;
-  overflow: auto;
-  height: 100%;
+  overflow: auto ;
+  overflow-y: hidden;
+  font-size: var(--fontsize);
+  height: 100px;
+  line-height: 100px;
+  text-align:end;
 }
 
 button {
@@ -62,6 +68,7 @@ button {
 
 body{
     background: black;
+    display: block;
 }
 
 #zero {
